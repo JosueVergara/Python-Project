@@ -1,2 +1,20 @@
 QuÃ© es PIP?
 
+
+dÃonde se esta ejecutando python3:
+which python3
+which pip3
+
+Crear un ambiente virtual:
+- Ubicar la carpeta o proyecto donde queremos agregar el ambiente virtual
+- Ejecutar: python3 -m venv nombre_del_ambiente
+- Activar: source env/bin/activate
+- Desactivar: deactivate
+
+
+archive with project requirements:
+
+- Install all necessary libraries with pip3 instal dependence.....
+- Execute: pip3 freeze > requirements.txt
+- pip3 install -r requirements.txt
+

@@ -1,5 +1,6 @@
 import store
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
@@ -8,11 +9,12 @@ def get_list():
     return [5,2,645,23,12]
 
 
-@app.get("/contact")
+@app.get("/contact", response_class=HTMLResponse )
 def get_list():
-    return {"name": "Joshua",
-            "lastName": "Jones",
-            "age": 25}
+    return """
+    <h1>This is a page</h1>
+     <p>I'm testing this page</p>
+    """
 
 
 def run():
